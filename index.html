@@ -1,0 +1,49 @@
+
+<html lang="pl">
+<head>
+<title>INDEX OFF</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA/4QAADjAAAB8wAAA7sAAAMbAAADGwAAAxsAAAO7AAAB8wAAAOPgAAAD4AAAAwAAAAMAAAADAAAAAwAAAAP8AAAD/AADHPwAAgz8AABE/AAA5PwAAOT8AADk/AAARPwAAgz8AAMcHAAD/BwAA/z8AAP8/AAD/PwAA/z8AAP8AAAD/AAAA" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="pliki/bootstrap.mi.css" rel="stylesheet">
+<style>
+.well { padding:5px;}
+.btn {margin:5px;}
+</style>
+</head>
+<body>
+
+
+	<div class="row-fluid">
+		<div id='linki' class="span12 well">
+
+		</div>
+	</div>
+
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div id='linki' class="span12 well">
+
+		</div>
+	</div>
+</div>
+
+<script>
+
+var links=['01-default.html','02-jquery.html','04-jquery-mobile.html'];
+
+
+
+document.getElementById('linki').innerHTML+='<b>Linki</b>';
+for (var g in links){
+	document.getElementById('linki').innerHTML+='<a href="'+links[g]+'" class="btn btn-info btn-large" target="_blank">'+links[g]+'</a>';
+	
+}
+
+
+</script>	
+
+
+</body>
+</html>
